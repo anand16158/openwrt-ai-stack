@@ -67,8 +67,7 @@ All daemons communicate via **ubus** (OpenWrt IPC), are managed by **procd** (in
 Clone this repo alongside your OpenWrt source tree:
 
 ```bash
-git clone https://github.com/USERNAME/openwrt-ai-stack.git
-```
+git clone https://github.com/anand16158/openwrt-ai-stack.git```
 
 Add to your OpenWrt `feeds.conf`:
 
@@ -79,7 +78,7 @@ src-link ai /path/to/openwrt-ai-stack
 Or directly from GitHub:
 
 ```
-src-git ai https://github.com/USERNAME/openwrt-ai-stack.git
+src-git ai https://github.com/anand16158/openwrt-ai-stack.git
 ```
 
 Then update and install:
