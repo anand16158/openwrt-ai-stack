@@ -94,7 +94,7 @@ This generates `model_predict.c` and `model_predict.h` — pure C code with no d
 ```bash
 # Copy into the package source
 cp model_c/model_predict.c model_c/model_predict.h \
-   ../package/network/services/traffic-classifier/src/
+   ../traffic-classifier/src/
 
 # Update classifier.c to call model_predict() instead of classify_heuristic()
 # Rebuild the package

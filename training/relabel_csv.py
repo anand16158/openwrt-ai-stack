@@ -44,8 +44,8 @@ def get_label_for_timestamp(ts):
 
 
 def main():
-    input_path = sys.argv[1] if len(sys.argv) > 1 else "/home/akumar/tc-training-data.csv"
-    output_path = sys.argv[2] if len(sys.argv) > 2 else "/home/akumar/openwrt-anand/training/labeled_real_data.csv"
+    input_path = sys.argv[1] if len(sys.argv) > 1 else "data/tc-training-data.csv"
+    output_path = sys.argv[2] if len(sys.argv) > 2 else "data/labeled_real_data.csv"
 
     relabeled = 0
     kept = 0

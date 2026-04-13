@@ -56,7 +56,7 @@ N_CLASSES = 8
 
 SRC_DIR = os.path.join(
     os.path.dirname(__file__), "..",
-    "package", "network", "services", "traffic-classifier", "src"
+    "traffic-classifier", "src"
 )
 
 PROFILES = {

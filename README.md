@@ -10,7 +10,7 @@ traffic -- no cloud, no external dependencies, runs entirely on-device.
 Add this feed to any OpenWrt build tree:
 
 ```bash
-echo "src-git aistack https://github.com/anand16158/openwrt-ai-stack.git" >> feeds.conf
+echo "src-git aistack https://github.com/anand16158/openwrt-ai-stack.git;openwrt-ai-new" >> feeds.conf
 ./scripts/feeds update aistack
 ./scripts/feeds install -a -p aistack
 ```

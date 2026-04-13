@@ -6,7 +6,7 @@ The generated C code can be compiled directly into the traffic-classifier
 daemon — no ONNX runtime or Python needed on the target device.
 
 Usage:
-    python export_treelite.py --model model/classifier.xgb --output ../package/network/services/traffic-classifier/src/
+    python export_treelite.py --model model/classifier.xgb --output ../traffic-classifier/src/
 """
 
 import argparse
