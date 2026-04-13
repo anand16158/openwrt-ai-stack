@@ -1,32 +1,7 @@
-# Build artifacts
 *.o
-*.so
-*.so.*
-*.a
-*.ko
-*.mod.c
-*.order
-*.symvers
-*.cmd
-
-# OpenWrt build system
+*.d
+*.ipk
 build_dir/
-staging_dir/
-tmp/
-bin/
-dl/
-feeds/
-.config
-.config.old
-logs/
-
-# Editor files
-*.swp
-*.swo
-*~
-.vscode/
-.idea/
-
-# OS files
-.DS_Store
-Thumbs.db
+training/model/classifier.joblib
+__pycache__/
+*.pyc
