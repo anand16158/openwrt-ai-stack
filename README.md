@@ -142,6 +142,29 @@ Trained on 21,972 real device-captured flows + 10,000 synthetic augmentation:
 | other | 0.90 | 0.95 | 0.93 |
 | **Overall** | | | **0.89** |
 
+## ubus API
+
+Query the classifier from the command line or scripts:
+
+```bash
+# Daemon status and summary
+ubus call traffic-classifier status
+
+# Per-client classification results
+ubus call traffic-classifier get_clients
+
+# Active flow table with per-flow class + confidence
+ubus call traffic-classifier get_flows
+
+# Aggregate statistics (bytes/packets per category)
+ubus call traffic-classifier get_stats
+
+# Anomaly alerts (unusual traffic patterns)
+ubus call traffic-classifier get_anomalies
+```
+
+All methods return JSON. The LuCI dashboard uses these same endpoints.
+
 ## On-Device Data Capture
 
 The daemon can record labeled flows for retraining:
